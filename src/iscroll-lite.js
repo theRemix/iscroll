@@ -140,6 +140,7 @@ iScroll.prototype = {
 
 		setTimeout(function () {
 			that.refresh();
+			window.scrollTo(0, 1);
 		}, 0);
 	},
 	
@@ -513,6 +514,7 @@ iScroll.prototype = {
 		that._scrollbar('v');
 	
 		that._resetPos();
+		window.scrollTo(0, 1);
 	},
 
 	scrollTo: function (x, y, time, relative) {
